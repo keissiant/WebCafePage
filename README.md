@@ -4,9 +4,9 @@
 
 Este repositorio contiene todos los datos necesarios para crear una página web sencilla utilizando HTML, CSS y JavaScript.
 
-![HTML5](https://img.icons8.com/ios-filled/50/000000/html-5.png)
-![CSS3](https://img.icons8.com/ios-filled/50/000000/css3.png)
-![JavaScript](https://img.icons8.com/ios-filled/50/000000/javascript.png)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## Instrucciones
 
@@ -14,7 +14,7 @@ El proyecto será realizado en equipos. Cada equipo será responsable de desarro
 
 ## Pagina guia
 
-[Pagina Guia Link](https://keissiant2.netlify.app/)
+[Pagina Guia Link](https://keissiant2.netlify.app/) -- Esta es la pagina con la nos vamos a guiar para crear nuestro proyecto.
 
 ## Estructura del Repositorio
 
@@ -30,7 +30,7 @@ Los equipos se encargarán de diferentes secciones del proyecto. Asegúrate de t
 
 Una vez que la página esté lista, el enlace al sitio web será colocado aquí:
 
-[Enlace al Proyecto Web](#) -- PENDIENTE
+[Enlace al Proyecto Web](https://keissiant.github.io/WebCafePage/)
 
 ## Diapositivas del Curso
 
