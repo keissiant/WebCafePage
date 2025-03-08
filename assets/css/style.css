@@ -1,0 +1,174 @@
+:root{
+    --fuenteHeadins: 'Open Sans', sans-serif;
+    --fuenteParrafos: 'PT Sans', sans-serif;
+    --colorPrincipal: #784d3c;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #e1e1e1;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/*Globales*/
+.contenedor{
+    max-width: 90rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeadins);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.5rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+img{
+    max-width: 100%;
+}
+/*Utilidades*/
+
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+/*Header*/
+.header{
+    background-image: url(../img/banner.webp);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header__texto{
+    color: var(--blanco);
+    text-align: center;
+    padding-top: 15rem;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.navegacion__enlace{
+    color: var(--blanco);
+    padding-right: 1rem;
+}
+.navegacion__enlace:hover{
+    text-decoration: underline;
+}
+.logo{
+    color: var(--blanco);
+    font-weight: 100;
+
+}
+.logo-bold{
+    color: var(--blanco);
+    font-weight: bold;
+}
+/*Contenido principal*/
+.contenido-principal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+.contenido{
+    border-bottom: 1px solid var(--gris);
+    padding: 3rem 0;
+}
+.contenido:first-of-type{
+    padding-top: 0;
+}
+.contenido:last-of-type{
+    border-bottom: none;
+    padding-bottom: 10rem;
+}
+.boton-contenido{
+    padding: 1rem 3rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-weight: bold;
+}
+@media(max-width:768px){
+    .contenido-principal{
+        grid-template-columns: 1fr;
+    }
+    .boton-contenido{
+        display: block;
+        text-align: center;
+    }
+    .sidebar{
+        grid-column: 1/2;
+    
+    }
+    .barra{
+        flex-direction: column;
+    }
+    .texto1{
+        line-height: 4rem;
+    }
+}
+/*barra del lado*/
+.lista__cursos{
+    list-style: none;
+}
+.curso__precio,
+.curso__cupo{
+    font-weight: bold;
+}
+.curso__valor,
+.curso__cantidad{
+    font-weight: normal;
+}
+.boton-contenido--aside{
+    background-color: var(--colorPrincipal);
+}
+.lista__curso{
+    border-bottom: 1px solid var(--gris);
+    padding-bottom: 4rem;
+}
+.lista__curso:last-of-type{
+    border: none;
+}
+/*Footer*/
+.footer{
+    padding: 2.5rem 8rem;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo--footer{
+    font-size: 3.5rem;
+}
+@media(max-width:768px){
+    .footer{
+        flex-direction: column;
+    }
+}
