@@ -5,7 +5,9 @@
 Este repositorio contiene todos los datos necesarios para crear una página web sencilla utilizando HTML, CSS y JavaScript.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## Instrucciones
@@ -19,12 +21,19 @@ El proyecto será realizado en equipos. Cada equipo será responsable de desarro
 ## Estructura del Repositorio
 
 - **HTML**: Archivos HTML para la estructura de la página.
+
 - **CSS**: Archivos CSS para los estilos y el diseño visual.
+
 - **JS**: Archivos JavaScript para la funcionalidad interactiva.
 
 ## Equipos
 
 Los equipos se encargarán de diferentes secciones del proyecto. Asegúrate de trabajar de manera colaborativa y utilizar un sistema de control de versiones como Git para evitar conflictos.
+
+## Colaboradores
+
+1.  Keissiant Patiño (owner)
+2.  ...
 
 ## Enlace del Proyecto
 
