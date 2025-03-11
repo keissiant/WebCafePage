@@ -33,7 +33,8 @@ Los equipos se encargarán de diferentes secciones del proyecto. Asegúrate de t
 ## Colaboradores
 
 1.  Keissiant Patiño (owner)
-2.  ...
+2.  Nicolas Rodriguez 
+3. ...
 
 ## Enlace del Proyecto
 
