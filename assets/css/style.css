@@ -234,4 +234,33 @@ img{
 #Nosotros img:hover {
     transform: scale(1.05); /* Hace zoom al pasar el mouse */
 }
+/* Estilos para el Carrusel */
+.swiper-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Ajustar tamaño del contenedor del carrusel */
+.swiper-container {
+    width: 80%; /* Ajusta el ancho */
+    max-width: 600px; /* Limita el ancho máximo */
+    margin: 30px auto; /* Centrar */
+}
+
+/* Ajustar tamaño de las imágenes */
+.swiper-slide img {
+    width: 100%; /* Ajusta el ancho */
+    height: auto; /* Mantener la proporción */
+    max-height: 400px; /* Aumentar la altura */
+    object-fit: contain; /* Mostrar toda la imagen sin recortar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 
