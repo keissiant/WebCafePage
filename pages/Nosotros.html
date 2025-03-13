@@ -9,18 +9,52 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- Fuente de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
 
     <section id="Nosotros">
         <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo apasionado por el café, dedicados a ofrecer la mejor experiencia.</p>
+        <p>Somos un equipo apasionado por el café colombiano, dedicado a ofrecer una experiencia única que resalta lo mejor de nuestra tierra. Cada taza de café que preparamos está llena de tradición, sabor y la riqueza que solo el café cultivado en las montañas de Colombia puede ofrecer. Nos enorgullece trabajar directamente con productores locales, apoyando sus esfuerzos y garantizando que cada grano sea seleccionado cuidadosamente para brindar una experiencia excepcional. Creemos que el café colombiano no es solo una bebida, es una historia de trabajo, dedicación y pasión, y nos complace compartirla con el mundo. ¡Déjate cautivar por la magia del café colombiano!</p>
         <img src="../assets/img/photorealistic-woman-organic-sustainable-garden-harvesting-produce.jpg" 
-        alt="Nuestro equipo" 
-        width="500">
+        alt="Nuestro equipo" width="500">
     </section>
+
+    <!-- Carrusel de Imágenes -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/img/recolector-cafe.jpg" alt="Imagen 1"></div>
+            <div class="swiper-slide"><img src="../assets/img/prensa-cafe.jpg" alt="Imagen 2"></div>
+            <div class="swiper-slide"><img src="../assets/img/saco-cafe.jpg" alt="Imagen 3"></div>
+        </div>
+        <!-- Botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // Hace que el carrusel sea infinito
+            autoplay: {
+                delay: 3000, // Cambia de imagen cada 3 segundos
+                disableOnInteraction: false, // Sigue el autoplay aunque el usuario interactúe
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </body>
 </html>
