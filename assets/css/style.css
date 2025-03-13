@@ -172,3 +172,54 @@ img{
         flex-direction: column;
     }
 }
+/* Nosotros */
+#Nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    background-image: url('../img/copy-space-coffee-beans.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    height: 100vh; /* Ajustar la altura al 100% de la pantalla */
+}
+
+/* Título */
+#Nosotros h2 {
+    font-family: 'Fleur De Leah', cursive; /* Asegura la fuente */
+    font-size: 3.5rem; /* Tamaño más grande */
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Párrafo */
+#Nosotros p {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+/* Imagen */
+#Nosotros img {
+    width: 80%; /* Ajustar el tamaño */
+    max-width: 500px; /* Limitar el tamaño máximo */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Efecto suave al pasar el mouse */
+}
+
+#Nosotros img:hover {
+    transform: scale(1.05); /* Hace zoom al pasar el mouse */
+}
+
