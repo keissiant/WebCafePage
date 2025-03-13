@@ -184,7 +184,7 @@ img{
     padding: 50px;
     max-width: 100%;
     height: 100vh; /* Toda la pantalla */
-    background-image: url('../img/fondo-cafe.jpg');
+    background-image: url('../img/fondo-cafe.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
