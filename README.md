@@ -34,7 +34,8 @@ Los equipos se encargarán de diferentes secciones del proyecto. Asegúrate de t
 
 1.  Keissiant Patiño (owner)
 2.  Nicolas Rodriguez 
-3. ...
+3.  Yesenia Chaves
+4.  ...
 
 ## Enlace del Proyecto
 
