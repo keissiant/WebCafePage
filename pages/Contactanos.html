@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        /* Fondo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: url("../assets/img/banner.webp") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo del formulario */
+        .form-container {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #5D4037;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Estilos para los campos del formulario */
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #BCAAA4;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .form-container textarea {
+            height: 100px;
+        }
+
+        /* Estilo del botón de envío */
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6D4C41;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #8D6E63;
+        }
+
+        /* Estilos para los campos de los mensajes */
+        .form-container input:focus, .form-container textarea:focus {
+            border-color: #8D6E63;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/your_form_endpoint" method="POST">
+            <!-- Campo Nombre -->
+            <input type="text" name="name" placeholder="Nombre" required>
+
+            <!-- Campo Teléfono -->
+            <input type="tel" name="phone" placeholder="Teléfono" required>
+
+            <!-- Campo Correo -->
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+
+            <!-- Campo Mensaje -->
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+
+            <!-- Botón de Enviar -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
