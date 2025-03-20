@@ -5,19 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pagina web de consejos acerca del café">
+    <meta name="description" content="Página web de consejos acerca del café">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-    <title>Blog de cafe</title>
-    <!--Prefetch-->
+
+    <title>Blog de Café</title>
+
+    <!-- Prefetch -->
     <link rel="prefetch" href="cursos.html" as="document">
-    <!--Preload-->
-    <link rel="Preload" href="assets/css/normalize.css" as="style">
+
+    <!-- Preload -->
+    <link rel="preload" href="assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon corregido -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -25,7 +35,7 @@
         <div class="contenedor">
             <div class="barra">
                 <a href="index.html">
-                    <h1 class="no-margin logo">Blog <span class="logo-bold">de café</span> </h1>
+                    <h1 class="no-margin logo">Blog <span class="logo-bold">de Café</span></h1>
                 </a>
                 <nav class="navegacion">
                     <a href="pages/Nosotros.html" class="navegacion__enlace">Nosotros</a>
@@ -41,87 +51,60 @@
             </div>
         </div>
     </header>
+
     <div class="contenedor contenido-principal">
         <main class="blog">
-            <h3>Nuestro blog</h3>
+            <h3>Nuestro Blog</h3>
             <article class="contenido">
                 <picture>
                     <source srcset="assets/img/blog1.webp" type="image/webp">
                     <div class="contenido__imagen">
-                        <img loading="lazy" src="assets/img/blog1.webp" alt="Contenido principal">
+                        <img loading="lazy" src="assets/img/blog1.webp" alt="Tipos de grano de café">
                     </div>
                 </picture>
                 <div class="contenido__entrada">
                     <h3 class="no-margin">Tipos de grano de café</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure dolor labore velit consequuntur modi veritatis esse!
-                        Architecto ut beatae ex dolorum voluptate. Numquam, nesciunt
-                        praesentium. Omnis temporibus soluta aut tempore.
-                    </p>
-                    <a href="pages/Blog.html" class="boton boton-contenido">Leer más</a>
-                </div>
-            </article>
-            <article class="contenido">
-                <div class="contenido__imagen">
-                    <img loading="lazy" src="assets/img/blog2.webp" alt="Contenido principal">
-                </div>
-                <div class="contenido__entrada">
-                    <h3 class="no-margin">Tipos de grano de café</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure dolor labore velit consequuntur modi veritatis esse!
-                        Architecto ut beatae ex dolorum voluptate. Numquam, nesciunt
-                        praesentium. Omnis temporibus soluta aut tempore.
-                    </p>
-                    <a href="pages/Blog.html" class="boton boton-contenido">Leer más</a>
-                </div>
-            </article>
-            <article class="contenido">
-                <div class="contenido__imagen">
-                    <img loading="lazy" src="assets/img/blog3.webp" alt="Contenido principal">
-                </div>
-                <div class="contenido__entrada">
-                    <h3 class="no-margin">Tipos de grano de café</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iure dolor labore velit consequuntur modi veritatis esse!
-                        Architecto ut beatae ex dolorum voluptate. Numquam, nesciunt
-                        praesentium. Omnis temporibus soluta aut tempore.
-                    </p>
+                    <p>Descubre los diferentes tipos de granos y sus características.</p>
                     <a href="pages/Blog.html" class="boton boton-contenido">Leer más</a>
                 </div>
             </article>
         </main>
+
         <aside class="sidebar">
             <h3>Nuestros cursos y talleres</h3>
             <ul class="no-padding lista__cursos">
                 <li class="lista__curso">
-                    <h4 class="curso">Técnicas de extraccion de café</h4>
-                    <p class="curso__precio">Precio:<span class="curso__valor"> Gratis</span></p>
-                    <p class="curso__cupo">Cupo:<span class="curso__cantidad"> 20</span></p>
-                    <a href="pages/Nosotros.html" class="boton-contenido boton-contenido--aside">Más informacion</a>
-
-                </li>
-                <li class="lista__curso">
-                    <h4 class="curso">4 Recetas de cafe para principiantes</h4>
-                    <p class="curso__precio">Precio:<span class="curso__valor"> Gratis</span></p>
-                    <p class="curso__cupo">Cupo:<span class="curso__cantidad"> 14</span></p>
-                    <a href="pages/Nosotros.html" class="boton-contenido boton-contenido--aside">Más informacion</a>
+                    <h4 class="curso">Técnicas de extracción de café</h4>
+                    <p class="curso__precio">Precio: <span class="curso__valor">Gratis</span></p>
+                    <p class="curso__cupo">Cupo: <span class="curso__cantidad">20</span></p>
+                    <a href="pages/Nosotros.html" class="boton-contenido boton-contenido--aside">Más información</a>
                 </li>
             </ul>
         </aside>
     </div>
+
     <footer>
         <div class="footer">
             <a href="index.html">
-                <h1 class="no-margin logo logo--footer">Blog <span class="logo-bold logo--footer">de café</span> </h1>
+                <h1 class="no-margin logo logo--footer">Blog <span class="logo-bold logo--footer">de Café</span></h1>
             </a>
             <nav class="navegacion">
                 <a href="pages/Nosotros.html" class="navegacion__enlace">Nosotros</a>
                 <a href="pages/Blog.html" class="navegacion__enlace">Cursos</a>
                 <a href="pages/Contactanos.html" class="navegacion__enlace">Contacto</a>
             </nav>
+        </div>
+
+        <div class="footer-info">
+            <p>&copy; 2025 WebCafePage | Creado por Jonathan Nicolás Rodríguez Parra</p>
+            <div class="social-links">
+                <a href="https://github.com/Celest3X" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jonathan-nicolas-rodríguez-parra-ab063128a/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

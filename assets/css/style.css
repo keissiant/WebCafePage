@@ -1,266 +1,44 @@
-:root{
-    --fuenteHeadins: 'Open Sans', sans-serif;
-    --fuenteParrafos: 'PT Sans', sans-serif;
-    --colorPrincipal: #784d3c;
-    --blanco: #fff;
-    --negro: #000;
-    --gris: #e1e1e1;
-}
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-body{
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 2;
-}
-/*Globales*/
-.contenedor{
-    max-width: 90rem;
-    width: 90%;
-    margin: 0 auto;
-}
-a{
-    text-decoration: none;
-}
-h1,h2,h3,h4{
-    font-family: var(--fuenteHeadins);
-    line-height: 1.2;
-}
-h1{
-    font-size: 4.8rem;
-}
-h2{
-    font-size: 4rem;
-}
-h3{
-    font-size: 3.5rem;
-}
-h4{
-    font-size: 2.4rem;
-}
-img{
-    max-width: 100%;
-}
-/*Utilidades*/
-
-.no-margin{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-.no-padding{
     padding: 0;
-}
-.centrar-texto{
+    background: #1e1e1e;
+    color: #fff;
     text-align: center;
 }
-/*Header*/
-.header{
-    background-image: url(../img/banner.webp);
-    height: 60rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-.header__texto{
-    color: var(--blanco);
-    text-align: center;
-    padding-top: 15rem;
-}
-.barra{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-}
-.navegacion__enlace{
-    color: var(--blanco);
-    padding-right: 1rem;
-}
-.navegacion__enlace:hover{
-    text-decoration: underline;
-}
-.logo{
-    color: var(--blanco);
-    font-weight: 100;
 
+header {
+    background: #111;
+    padding: 20px;
+    font-size: 24px;
 }
-.logo-bold{
-    color: var(--blanco);
-    font-weight: bold;
-}
-/*Contenido principal*/
-.contenido-principal{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 3rem;
-}
-.contenido{
-    border-bottom: 1px solid var(--gris);
-    padding: 3rem 0;
-}
-.contenido:first-of-type{
-    padding-top: 0;
-}
-.contenido:last-of-type{
-    border-bottom: none;
-    padding-bottom: 10rem;
-}
-.boton-contenido{
-    padding: 1rem 3rem;
-    background-color: var(--negro);
-    color: var(--blanco);
-    font-weight: bold;
-}
-@media(max-width:768px){
-    .contenido-principal{
-        grid-template-columns: 1fr;
-    }
-    .boton-contenido{
-        display: block;
-        text-align: center;
-    }
-    .sidebar{
-        grid-column: 1/2;
-    
-    }
-    .barra{
-        flex-direction: column;
-    }
-    .texto1{
-        line-height: 4rem;
-    }
-}
-/*barra del lado*/
-.lista__cursos{
-    list-style: none;
-}
-.curso__precio,
-.curso__cupo{
-    font-weight: bold;
-}
-.curso__valor,
-.curso__cantidad{
-    font-weight: normal;
-}
-.boton-contenido--aside{
-    background-color: var(--colorPrincipal);
-}
-.lista__curso{
-    border-bottom: 1px solid var(--gris);
-    padding-bottom: 4rem;
-}
-.lista__curso:last-of-type{
-    border: none;
-}
-/*Footer*/
-.footer{
-    padding: 2.5rem 8rem;
-    background-color: var(--negro);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo--footer{
-    font-size: 3.5rem;
-}
-@media(max-width:768px){
-    .footer{
-        flex-direction: column;
-    }
-}
-/* Nosotros */
-/* Estilos para la sección Nosotros */
+
 #Nosotros {
-    position: relative; /* Necesario para el pseudo-elemento */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 50px;
-    max-width: 100%;
-    height: 100vh; /* Toda la pantalla */
-    background-image: url('../img/fondo-cafe.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    z-index: 1; /* Para que el contenido esté por encima */
 }
 
-/* Capa oscura semitransparente */
-#Nosotros::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad (0 = transparente, 1 = sólido) */
-    z-index: -1; /* Para que quede detrás del contenido */
-}
-
-#Nosotros h2 {
-    font-family: 'Style Script', cursive;
-    font-size: 4rem; /* Puedes ajustar el tamaño */
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 1px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Párrafo */
-#Nosotros p {
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    max-width: 600px;
-}
-
-/* Imagen */
-#Nosotros img {
-    width: 80%; /* Ajustar el tamaño */
-    max-width: 500px; /* Limitar el tamaño máximo */
-    border-radius: 15px; /* Esquinas redondeadas */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
-    margin-top: 20px;
-    transition: transform 0.3s ease-in-out; /* Efecto suave al pasar el mouse */
-}
-
-#Nosotros img:hover {
-    transform: scale(1.05); /* Hace zoom al pasar el mouse */
-}
-/* Estilos para el Carrusel */
-.swiper-container {
-    width: 80%;
+.contenido-nosotros {
     max-width: 800px;
-    margin: 30px auto;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.swiper {
+    width: 80%;
+    margin: 20px auto;
 }
 
 .swiper-slide img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
-}
-/* Ajustar tamaño del contenedor del carrusel */
-.swiper-container {
-    width: 80%; /* Ajusta el ancho */
-    max-width: 600px; /* Limita el ancho máximo */
-    margin: 30px auto; /* Centrar */
 }
 
-/* Ajustar tamaño de las imágenes */
-.swiper-slide img {
-    width: 100%; /* Ajusta el ancho */
-    height: auto; /* Mantener la proporción */
-    max-height: 400px; /* Aumentar la altura */
-    object-fit: contain; /* Mostrar toda la imagen sin recortar */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
 }
 
-
+.swiper-pagination-bullet-active {
+    background: #ff9900;
+}

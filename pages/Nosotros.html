@@ -3,58 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-
-    <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    
-    <!-- Fuente de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
-    
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Nosotros - WebCafePage</title>
+    <link rel="stylesheet" href="/WebCafePage/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
-
+    <header>
+        <h1>Sobre Nosotros</h1>
+    </header>
+    
     <section id="Nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo apasionado por el café colombiano, dedicado a ofrecer una experiencia única que resalta lo mejor de nuestra tierra. Cada taza de café que preparamos está llena de tradición, sabor y la riqueza que solo el café cultivado en las montañas de Colombia puede ofrecer. Nos enorgullece trabajar directamente con productores locales, apoyando sus esfuerzos y garantizando que cada grano sea seleccionado cuidadosamente para brindar una experiencia excepcional. Creemos que el café colombiano no es solo una bebida, es una historia de trabajo, dedicación y pasión, y nos complace compartirla con el mundo. ¡Déjate cautivar por la magia del café colombiano!</p>
-        <img src="../assets/img/photorealistic-woman-organic-sustainable-garden-harvesting-produce.jpg" 
-        alt="Nuestro equipo" width="500">
-    </section>
-
-    <!-- Carrusel de Imágenes -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../assets/img/recolector-cafe.webp" alt="Imagen 1"></div>
-            <div class="swiper-slide"><img src="../assets/img/prensa-cafe.webp" alt="Imagen 2"></div>
-            <div class="swiper-slide"><img src="../assets/img/cosecha-cafe.webp" alt="Imagen 3"></div>
+        <div class="contenido-nosotros">
+            <h2>Historia y Pasión por el Café</h2>
+            <p>Somos una comunidad apasionada por el café, donde cada taza cuenta una historia...</p>
         </div>
-        <!-- Botones de navegación -->
+    </section>
+    
+    <section class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/WebCafePage/assets/img/cafe1.jpg" alt="Café 1"></div>
+            <div class="swiper-slide"><img src="/WebCafePage/assets/img/cafe2.jpg" alt="Café 2"></div>
+            <div class="swiper-slide"><img src="/WebCafePage/assets/img/cafe3.jpg" alt="Café 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true, // Hace que el carrusel sea infinito
-            autoplay: {
-                delay: 3000, // Cambia de imagen cada 3 segundos
-                disableOnInteraction: false, // Sigue el autoplay aunque el usuario interactúe
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/WebCafePage/assets/js/script.js"></script>
 </body>
 </html>
