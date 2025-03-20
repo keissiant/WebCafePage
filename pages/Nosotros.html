@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - WebCafePage</title>
-    <link rel="stylesheet" href="/WebCafePage/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        body {
+            background: url('../assets/img/vertical-shot-printed-cup-full-roasted-coffee-beans-isolated-dark-wall.webp') no-repeat center center/cover;
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        #mision-vision {
+            padding: 30px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 50vh;
+            margin-top: 100px;
+            padding-top: 20px;
+            border-radius: 10px;
+        }
+        .contenedor {
+            max-width: 800px;
+            margin: auto;
+        }
+        .mision, .vision {
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: black;
+            font-family: 'Dancing Script', cursive;
+        }
+        .swiper {
+            max-width: 50%;
+            margin: 200px auto 50px;
+        }
+        .swiper-slide img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 400px;
+            display: block;
+            margin: auto;
+        }
+        .navegacion__enlace, .copyright {
+            color: white !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,24 +71,59 @@
     </header>
     
     <section id="Nosotros">
-        <div class="contenido-nosotros">
-            <h2>Historia y Pasión por el Café</h2>
-            <p>Somos una comunidad apasionada por el café, donde cada taza cuenta una historia...</p>
-        </div>
+        <h2>Historia y Pasión por el Café</h2>
+        <p>Somos una comunidad apasionada por el café, donde cada taza cuenta una historia...</p>
     </section>
     
-    <section class="swiper">
+    <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/WebCafePage/assets/img/cafe1.jpg" alt="Café 1"></div>
-            <div class="swiper-slide"><img src="/WebCafePage/assets/img/cafe2.jpg" alt="Café 2"></div>
-            <div class="swiper-slide"><img src="/WebCafePage/assets/img/cafe3.jpg" alt="Café 3"></div>
+            <div class="swiper-slide"><img src="../assets/img/73583074_9795831.webp" alt="Café 1"></div>
+            <div class="swiper-slide"><img src="../assets/img/28430559_7449787.webp" alt="Café 2"></div>
+            <div class="swiper-slide"><img src="../assets/img/73584121_9756112.webp" alt="Café 3"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+    </div>
+
+    <section id="mision-vision">
+        <div class="contenedor">
+            <div class="mision">
+                <h3>Misión</h3>
+                <p>Nos dedicamos a ofrecer una experiencia única en cada taza de café, garantizando la más alta calidad a través de procesos sostenibles y responsables. Trabajamos en estrecha colaboración con comunidades caficultoras, promoviendo el desarrollo social y económico mientras preservamos el medio ambiente. Nuestra misión es transmitir la pasión por el café y convertirlo en un puente de conexión entre personas y culturas.</p>
+            </div>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Buscamos ser reconocidos globalmente como un referente de excelencia en la industria cafetera. Aspiramos a expandir nuestra presencia en el mercado, manteniendo siempre nuestros valores de sostenibilidad, innovación y respeto por la tradición. Nos esforzamos por inspirar a las futuras generaciones a descubrir el arte del café, manteniendo un equilibrio entre la tecnología y la esencia artesanal.</p>
+            </div>
+        </div>
     </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="/WebCafePage/assets/js/script.js"></script>
+
+    <footer>
+        <div class="footer">
+            <a href="../index.html">
+                <h1 class="no-margin logo logo--footer">Blog <span class="logo-bold logo--footer">de Café</span></h1>
+            </a>
+            <nav class="navegacion">
+                <a href="Nosotros.html" class="navegacion__enlace">Nosotros</a>
+                <a href="Blog.html" class="navegacion__enlace">Cursos</a>
+                <a href="Contactanos.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+            <div class="social-links">
+                <a href="https://github.com/Celest3X" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jonathan-nicolas-rodríguez-parra-ab063128a/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2025 Blog de Café | Creado por <a href="https://www.linkedin.com/in/jonathan-nicolas-rodríguez-parra-ab063128a/" target="_blank">Jonathan Nicolás Rodríguez Parra</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
 </body>
 </html>
