@@ -83,7 +83,7 @@
         }
 
         form input[type="submit"] {
-            background-color: #06f662;
+            background-color:brown;
             color: white;
             border: none;
             padding: 12px 25px;
@@ -151,6 +151,17 @@
 
                 <input type="submit" value="☕ Enviar">
             </form>
+            <script>
+                const form = document.querySelector('form');
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Evita el envío real del formulario
+                    alert('¡Gracias por tu comentario! Hemos recibido tu solicitud.');
+                    form.reset(); // Opcional: Limpia el formulario después de enviar
+                });
+            </script>
+            <div style="text-align: left; margin-top: 20px;"></div>
+                <a href="../index.html" style="text-decoration: none; color: #ffffff; background-color: brown; padding: 10px 20px; border-radius: 6px; font-size: 16px; display: inline-block;">Volver al Inicio</a>
+            </div>
         </div>
     </div>
 </body>
